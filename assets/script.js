@@ -5,7 +5,8 @@ var currentDateEl = $("#currentDay");
 var scheduleEl = $(".container-fluid");
 var saveButtonEl = $(".saveBtn");
 var descriptionEl = $(".description");
-var scheduleTimeEl = $(".time-block")
+var timeBlockEl = $(".time-block");
+var hourEl = $(".hour");
 var formatDate = dayjs();
 
 $(function () {
@@ -16,7 +17,12 @@ $(function () {
     // time-block containing the button that was clicked? How might the id be
     // useful when saving the description in local storage?
     saveButtonEl.on("click", function(){
-      console.log("click me");
+      var text = $(this).siblings(".description").val();
+      // console.log(text);
+      var currentHour = $(this).parent().attr("id");
+      // console.log(currentHour);
+      localStorage.setItem(currentHour, text);
+      console.log(localStorage.getItem(currentHour, text));
     })
 
     //
