@@ -22,6 +22,8 @@ $(function () {
       var scheduledHour = $(this).parent().attr("id");
 
       localStorage.setItem(scheduledHour, text);
+      init();
+      console.log(init());
     })
 
     // TODO: Add code to apply the past, present, or future class to each time
@@ -52,6 +54,10 @@ $(function () {
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
     //
+    function init(){
+      var hourlyDescription = localStorage.getItem(timeBlockEl.attr("id"));
+      descriptionEl.addClass(hourlyDescription);
+    }
     // TODO: Add code to display the current date in the header of the page.
     $(currentDateEl).text(formatDate.format("dddd, MMMM DD hh:mm A"));
   }); 
