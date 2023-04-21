@@ -7,7 +7,7 @@ This project was made to a virtual hourly work schedule from 9am to 5pm of what 
 
 ## Usage
 
-![alt text](assets/images/screenshot.png)
+![alt text](./assets/images/Screenshot%202023-04-20%20at%2011.14.41%20PM.png)
 
 When you open the web page you will see three sections in a row in the order of time, empty container, and a blue box with a save disk in the center. If you click in the empty container, you can type whatever you need to and in order to save that data in there, click on the blue box. So now when you refresh the page the text you entered will still be in that container. 
 
@@ -41,4 +41,4 @@ SOFTWARE.
 
 Here is a link to my repo: https://github.com/Nneifem/work-schedule
 
-Here is a link to my webpage: 
+Here is a link to my webpage: https://nneifem.github.io/work-schedule/
