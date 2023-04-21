@@ -2,13 +2,6 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
 This project was made to a virtual hourly work schedule from 9am to 5pm of what the day will look like for the current day. It will help to keep everything organized and save money and paper as the it matches with your timezone so you will be up to date on things date and time wise. Creating this, I learned how to use jQuery within JavaScript and how to utilize localStorage in order to save the data when the page has been refreshed.
 
 

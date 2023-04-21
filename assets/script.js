@@ -23,49 +23,50 @@ $(function () {
     var hours = [09, 10, 11, 12, 13, 14, 15, 16, 17];
     $(hours).each(function(i, hour){
      if(hour < currentHour){
-      $("#" + hour).addClass("past")
+      $("#" + hour).addClass("past");
 
      }
      else if(hour == currentHour){
-      $("#" + hour).addClass("present")
+      $("#" + hour).addClass("present");
 
      }
      else if(hour > currentHour){
-      $("#" + hour).addClass("future")
+      $("#" + hour).addClass("future");
      }
     })
 
     /* making sure the text will still stay on the page after refreshing it */
     function init(){
+        var hours = [09, 10, 11, 12, 13, 14, 15, 16, 17];
         var hourAndText = JSON.parse(localStorage.getItem("textDescription"));
-        $(".saveBtn").siblings(".description").text(hourAndText.text);
-        for(var i = 0; i < hourAndText.length; i++){
-          if(timeBlockEl == 09){
-            $("#9").text(hourAndText[i].text);
+        // $(".saveBtn").siblings(".description").text(hourAndText.text);
+        for(var i = 9; i < hourAndText.length; i++){
+          if(hourAndText[0].scheduledHour == hours[0]){
+            $(".time-block").text(hourAndText[i].text);
           }
-          else if(timeBlockEl == 10){
-            $("#10").text(hourAndText[i].text);
+          else if(thourAndText[1].scheduledHour == hours[1]){
+            $(".time-block").text(hourAndText[i].text);
           }
-          else if(timeBlockEl == 11){
-            $("#11").text(hourAndText[i].text);
+          else if(thourAndText[2].scheduledHour == hours[2]){
+            $("#.time-block").text(hourAndText[i].text);
           }
-          else if(timeBlockEl == 12){
-            $("#12").text(hourAndText[i].text);
+          else if(hourAndText[3].scheduledHour == hours[3]){
+            $("#.time-block").text(hourAndText[i].text);
           }
-          else if(timeBlockEl == 13){
-            $("#13").text(hourAndText[i].text);
+          else if(hourAndText[4].scheduledHour == hours[4]){
+            $(".time-block").text(hourAndText[i].text);
           }
-          else if(timeBlockEl == 14){
-            $("#14").text(hourAndText[i].text);
+          else if(hourAndText[5].scheduledHour == hours[5]){
+            $(".time-block").text(hourAndText[i].text);
           }
-          else if(timeBlockEl == 15){
-            $("#15").text(hourAndText[i].text);
+          else if(hourAndText[6].scheduledHour == hours[6]){
+            $(".time-block").text(hourAndText[i].text);
           }
-          else if(timeBlockEl == 16){
-            $("#16").text(hourAndText[i].text);
+          else if(hourAndText[7].scheduledHour == hours[7]){
+            $(".time-block").text(hourAndText[i].text);
           }
-          else if(timeBlockEl == 17){
-            $("#17").text(hourAndText[i].text);
+          else if(hourAndText[8].scheduledHour == hours[8]){
+            $(".time-block").text(hourAndText[i].text);
           }
         }
       }
